@@ -1,5 +1,30 @@
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import WorkItem from "./WorkItem";
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const Wrapper = styled.div`
+  width: 58%;
+  padding: 10px 10px;
+  background-color: pink;
+  /* display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: 1fr;
+`;
+const Title = styled.h1``;
+
+const Work = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+`;
 
 const MyWork = () => {
   const [work, setWork] = useState([]);
@@ -41,7 +66,16 @@ const MyWork = () => {
       source={work.source}
     />
   ));
-  return <div>{workList}</div>;
+  return (
+    <Container>
+      <Wrapper>
+        <Title>MY WORK</Title>
+        <div>
+          <Work>{workList}</Work>
+        </div>
+      </Wrapper>
+    </Container>
+  );
 };
 
 export default MyWork;
