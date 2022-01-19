@@ -72,10 +72,10 @@ const Navbar = () => {
               <LinkItem>
                 <MyNavLink
                   to="/"
-                  activeStyle={{
-                    fontWeight: "bold",
-                    color: "red",
-                  }}
+                  // activeStyle={{
+                  //   fontWeight: "bold",
+                  //   color: "red",
+                  // }}
                 >
                   HOME
                 </MyNavLink>
