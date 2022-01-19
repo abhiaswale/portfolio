@@ -11,19 +11,16 @@ const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
   background-color: pink;
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: row; */
   display: grid;
   grid-template-columns: 1fr;
 `;
 const Title = styled.h1``;
 
 const Work = styled.div`
+  width: 94%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 62px;
 `;
 
 const MyWork = () => {
@@ -70,9 +67,8 @@ const MyWork = () => {
     <Container>
       <Wrapper>
         <Title>MY WORK</Title>
-        <div>
-          <Work>{workList}</Work>
-        </div>
+
+        <Work>{workList}</Work>
       </Wrapper>
     </Container>
   );
