@@ -8,12 +8,13 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const Wrapper = styled.div`
+const Project = styled.div`
   width: 58%;
   padding: 10px 10px;
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr;
+  grid-gap: 50px;
 `;
 
 const MyProjects = () => {
@@ -29,7 +30,7 @@ const MyProjects = () => {
   ));
   return (
     <Container>
-      <Wrapper>{projectsList}</Wrapper>
+      <Project>{projectsList}</Project>
     </Container>
   );
 };

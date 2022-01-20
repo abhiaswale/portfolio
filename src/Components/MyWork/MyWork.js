@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import WorkItem from "./WorkItem";
 import { projectItems } from "../../data";
+import { Link } from "react-router-dom";
+import Button from "../Layout/Button";
 
 const Container = styled.div`
   display: flex;
@@ -11,17 +13,28 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr;
 `;
 const Title = styled.h1``;
 
 const Work = styled.div`
-  width: 94%;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 62px;
+  grid-gap: 40px;
+`;
+
+const ViewBtnWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+`;
+const MyLink = styled(Link)`
+  color: white;
+  text-decoration: none;
 `;
 
 const MyWork = () => {
@@ -41,6 +54,11 @@ const MyWork = () => {
       <Wrapper>
         <Title>MY WORK</Title>
         <Work>{workList}</Work>
+        <ViewBtnWrapper>
+          <Button>
+            <MyLink to="/projects">View All</MyLink>
+          </Button>
+        </ViewBtnWrapper>
       </Wrapper>
     </Container>
   );

@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import Button from "../Layout/Button";
+
 const Container = styled.div`
-  width: 100%;
   background-color: #ecf7f9;
   padding: 20px;
   border-radius: 10px;
@@ -12,26 +13,22 @@ const Title = styled.span`
   font-size: 1.2rem;
   font-weight: 900;
 `;
-const Date = styled.span``;
-const Desc = styled.p``;
+const Date = styled.span`
+  margin: 0.5em 0em;
+  font-size: 0.8em;
+`;
+const Desc = styled.p`
+  margin: 0.6em 0em;
+`;
 const BtnWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
 `;
-const Button = styled.button`
-  padding: 5px 13px;
-  margin-left: ${(props) => props.name && "10px"};
-  background-color: #40b1bf;
-  background-color: ${(props) => props.name && "#ecf7f9"};
-  border-radius: 25px;
-  border: 2px solid #40b1bf;
-  border: ${(props) => props.name && "2px solid #40b1bf"};
-`;
 const BtnName = styled.a`
   color: white;
   text-decoration: none;
-  color: ${(props) => props.name && "black"};
+  color: ${(props) => props.name === "source" && "black"};
 `;
 const WorkItem = (props) => {
   return (
@@ -40,11 +37,11 @@ const WorkItem = (props) => {
       <Date>{props.date}</Date>
       <Desc>{props.desc}</Desc>
       <BtnWrapper>
-        <Button>
+        <Button name="live">
           <BtnName href={props.live}>View Live</BtnName>
         </Button>
         <Button name="source">
-          <BtnName href={props.source} name="sourceText">
+          <BtnName href={props.source} name="source">
             View Source
           </BtnName>
         </Button>

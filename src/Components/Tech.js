@@ -20,12 +20,18 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  background-color: pink;
+  /* background-color: pink; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr;
 `;
 
+const Title = styled.h1``;
+const ItemWrapper = styled.div`
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 32px 0px;
+`;
 const Item = styled.div`
   display: grid;
   grid-template-columns: 1fr;
@@ -35,52 +41,58 @@ const Item = styled.div`
 const LogosImg = styled.img`
   width: 50px;
 `;
-const LogoName = styled.span``;
+const LogoName = styled.span`
+  font-size: 0.8rem;
+  padding: 8px;
+`;
 
 const Tech = () => {
   return (
     <Container>
       <Wrapper>
-        <Item>
-          <LogosImg src={Js} />
-          <LogoName>Javascript</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={ReactLogo} />
-          <LogoName>React</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Redux} />
-          <LogoName>Redux</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Nodejs} />
-          <LogoName>Nodejs</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Html} />
-          <LogoName>Html</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Css} />
-          <LogoName>Css</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Github} />
-          <LogoName>GitHub</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Git} />
-          <LogoName>Git</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Jira} />
-          <LogoName>Jira</LogoName>
-        </Item>
-        <Item>
-          <LogosImg src={Mysql} />
-          <LogoName>Mysql</LogoName>
-        </Item>
+        <Title>My Skills</Title>
+        <ItemWrapper>
+          <Item>
+            <LogosImg src={Js} />
+            <LogoName>Javascript</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={ReactLogo} />
+            <LogoName>React</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Redux} />
+            <LogoName>Redux</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Nodejs} />
+            <LogoName>Nodejs</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Html} />
+            <LogoName>Html</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Css} />
+            <LogoName>Css</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Github} />
+            <LogoName>GitHub</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Git} />
+            <LogoName>Git</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Jira} />
+            <LogoName>Jira</LogoName>
+          </Item>
+          <Item>
+            <LogosImg src={Mysql} />
+            <LogoName>Mysql</LogoName>
+          </Item>
+        </ItemWrapper>
       </Wrapper>
     </Container>
   );

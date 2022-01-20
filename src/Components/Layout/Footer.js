@@ -6,6 +6,13 @@ import {
   AiFillTwitterCircle,
   AiFillFacebook,
 } from "react-icons/ai";
+import ScrollTop from "./ScrollTop";
+
+const MainWrp = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+`;
 
 const Container = styled.div`
   width: 100%;
@@ -32,25 +39,28 @@ const IconWrapper = styled.div`
 `;
 const Footer = () => {
   return (
-    <Container>
-      <Wrapper>
-        <p>
-          <span>©2022</span>, Built with{" "}
-          <a href="https://reactjs.org/">React Js</a>
-        </p>
-        <IconWrapper>
-          <a href="https://github.com/abhiaswale">
-            <AiFillGithub />
-          </a>
-          <a href="https://twitter.com/_abhi42">
-            <AiFillTwitterCircle />
-          </a>
-          <a href="https://www.facebook.com/abhishek.aswale.3/">
-            <AiFillFacebook />
-          </a>
-        </IconWrapper>
-      </Wrapper>
-    </Container>
+    <MainWrp>
+      <ScrollTop />
+      <Container>
+        <Wrapper>
+          <p>
+            <span>©2022</span>, Built with{" "}
+            <a href="https://reactjs.org/">React Js</a>
+          </p>
+          <IconWrapper>
+            <a href="https://github.com/abhiaswale">
+              <AiFillGithub />
+            </a>
+            <a href="https://twitter.com/_abhi42">
+              <AiFillTwitterCircle />
+            </a>
+            <a href="https://www.facebook.com/abhishek.aswale.3/">
+              <AiFillFacebook />
+            </a>
+          </IconWrapper>
+        </Wrapper>
+      </Container>
+    </MainWrp>
   );
 };
 

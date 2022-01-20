@@ -3,7 +3,7 @@ export const projectItems = [
     id: 1,
     name: "TO DO APP",
     date: "8th Oct 2021",
-    description: "A basic To Do App ",
+    description: "An basic To Do tasks App to add tasks ",
     detailedDescription:
       "Created this ToDo App using React, styled using css modules. User can add any tasks needed to be done and the tasks can be deleted once completed. used firebase as backend for storing data",
     live: "https://todoapp-e2fc65.netlify.app/",
@@ -12,7 +12,7 @@ export const projectItems = [
   {
     id: 2,
     name: "FOODY APP",
-    date: "1st nov 2021",
+    date: "1st Nov 2021",
     description: "An App made for an Restaurant",
     detailedDescription:
       "Created this app using react, used Redux toolkit and styling was done using css modules. Core Functionality includes Login, Signup, Booking a table. used firebase as a backend for storing data ",
