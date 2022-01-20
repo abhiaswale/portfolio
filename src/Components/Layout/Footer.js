@@ -6,12 +6,13 @@ import {
   AiFillTwitterCircle,
   AiFillFacebook,
 } from "react-icons/ai";
-import ScrollTop from "./ScrollTop";
+import ScrollTopBtn from "./ScrollTopBtn";
 
 const MainWrp = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  margin-bottom: 50px;
 `;
 
 const Container = styled.div`
@@ -37,15 +38,27 @@ const IconWrapper = styled.div`
   grid-gap: 25px;
   font-size: 2rem;
 `;
+
+const BtnWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0px;
+`;
+
 const Footer = () => {
   return (
     <MainWrp>
-      <ScrollTop />
+      <BtnWrap>
+        <ScrollTopBtn />
+        <div>Top</div>
+      </BtnWrap>
       <Container>
         <Wrapper>
           <p>
-            <span>©2022</span>, Built with{" "}
-            <a href="https://reactjs.org/">React Js</a>
+            <span>©2022</span>, Built with
+            <a href="https://reactjs.org/"> React Js</a>
           </p>
           <IconWrapper>
             <a href="https://github.com/abhiaswale">

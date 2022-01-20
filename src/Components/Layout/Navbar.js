@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../images/Logo3.png";
 
@@ -29,6 +29,7 @@ const LogoImg = styled.img`
   object-fit: cover;
   width: 190px;
   height: auto;
+  cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -60,30 +61,36 @@ const MyNavLink = styled(NavLink)`
 `;
 
 const Navbar = () => {
+  let navigate = useNavigate();
+  const GoHome = () => {
+    navigate("/");
+  };
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+    console.log(document.documentElement.scrollHeight);
+  };
   return (
     <Container>
       <Wrapper>
         <Left>
-          <LogoImg src={Logo} />
+          <LogoImg src={Logo} onClick={GoHome} />
         </Left>
         <Right>
           <LinkWrapper>
             <Links>
               <LinkItem>
-                <MyNavLink
-                  to="/"
-                  // activeStyle={{
-                  //   fontWeight: "bold",
-                  //   color: "red",
-                  // }}
-                >
-                  HOME
-                </MyNavLink>
+                <MyNavLink to="/">HOME</MyNavLink>
               </LinkItem>
               <LinkItem>
                 <MyNavLink to="/projects">PROJECTS</MyNavLink>
               </LinkItem>
-              <LinkItem>CONTACT</LinkItem>
+              <LinkItem>
+                <span onClick={scrollToBottom}>CONTACT</span>
+              </LinkItem>
             </Links>
           </LinkWrapper>
         </Right>

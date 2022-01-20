@@ -2,10 +2,13 @@ import React, { Fragment, useEffect, useState } from "react";
 import { CgChevronUp } from "react-icons/cg";
 import styled from "styled-components";
 const UpButton = styled.button`
-  font-size: 3rem;
-  width: 20%;
+  font-size: 2rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 `;
-const ScrollTop = () => {
+const ScrollTopBtn = () => {
   const [isVisible, setIsVisible] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -23,6 +26,7 @@ const ScrollTop = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <Fragment>
       {isVisible && (
@@ -34,4 +38,4 @@ const ScrollTop = () => {
   );
 };
 
-export default ScrollTop;
+export default ScrollTopBtn;

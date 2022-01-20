@@ -21,6 +21,7 @@ const MyProjects = () => {
   const projectsList = projectItems.map((proj) => (
     <ProjectItem
       id={proj.id}
+      key={proj.id}
       name={proj.name}
       date={proj.date}
       detailedDescription={proj.detailedDescription}

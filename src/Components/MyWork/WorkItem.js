@@ -45,6 +45,9 @@ const WorkItem = (props) => {
             View Source
           </BtnName>
         </Button>
+        {/* <Button name="live">
+          <BtnName link={props.live}>View Live</BtnName>
+        </Button> */}
       </BtnWrapper>
     </Container>
   );

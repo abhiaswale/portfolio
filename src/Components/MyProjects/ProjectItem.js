@@ -12,7 +12,7 @@ const Container = styled.div`
   -moz-box-shadow: 0 8px 6px -6px grey;
   box-shadow: 0 8px 2px -6px grey;
 `;
-const Wrapper = styled.div``;
+// const Wrapper = styled.div``;
 const Temp = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -21,6 +21,9 @@ const Temp = styled.div`
 const BtnName = styled.a`
   color: white;
   text-decoration: none;
+  &:hover {
+    color: ${(props) => props.name === "source" && "white"};
+  }
   color: ${(props) => props.name === "source" && "black"};
 `;
 
