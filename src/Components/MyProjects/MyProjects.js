@@ -1,38 +1,36 @@
-// import React, { useEffect, useState } from "react";
+import React from "react";
+import styled from "styled-components";
+import { projectItems } from "../../data";
+import ProjectItem from "./ProjectItem";
+
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const Wrapper = styled.div`
+  width: 58%;
+  padding: 10px 10px;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr;
+`;
 
 const MyProjects = () => {
-  //   const [projects, setProjects] = useState([]);
-
-  //   useEffect(() => {
-  //     const fetchProjects = async () => {
-  //       const response = await fetch(
-  //         "https://portfolio-305e7-default-rtdb.firebaseio.com/MyWork.json"
-  //       );
-  //       if (!response.ok) {
-  //         throw new Error("Error");
-  //       }
-  //       const data = await response.json();
-  //       console.log(data);
-  //       const loadedProj = [];
-  //       for (const key in data) {
-  //         loadedProj.push({
-  //           id: key,
-  //           name: data[key].name,
-  //         });
-  //       }
-  //       console.log(loadedProj);
-  //       setProjects([]);
-  //       //   setProjects(loadedProj);
-  //       console.log(projects);
-  //     };
-
-  //     fetchProjects().catch((err) => alert(err.message));
-  //   }, []);
-
+  const projectsList = projectItems.map((proj) => (
+    <ProjectItem
+      id={proj.id}
+      name={proj.name}
+      date={proj.date}
+      detailedDescription={proj.detailedDescription}
+      live={proj.live}
+      source={proj.source}
+    />
+  ));
   return (
-    <div>
-      <h1>My Projects</h1>
-    </div>
+    <Container>
+      <Wrapper>{projectsList}</Wrapper>
+    </Container>
   );
 };
 

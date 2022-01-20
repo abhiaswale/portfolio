@@ -12,6 +12,7 @@ const Title = styled.span`
   font-size: 1.2rem;
   font-weight: 900;
 `;
+const Date = styled.span``;
 const Desc = styled.p``;
 const BtnWrapper = styled.div`
   display: flex;
@@ -36,6 +37,7 @@ const WorkItem = (props) => {
   return (
     <Container>
       <Title>{props.name}</Title>
+      <Date>{props.date}</Date>
       <Desc>{props.desc}</Desc>
       <BtnWrapper>
         <Button>
