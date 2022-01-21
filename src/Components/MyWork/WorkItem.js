@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 import Button from "../Layout/Button";
 
 const Container = styled.div`
@@ -8,6 +9,7 @@ const Container = styled.div`
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
+  ${mobile({ width: "40vh" })}
 `;
 const Title = styled.span`
   font-size: 1.2rem;
@@ -33,7 +35,6 @@ const BtnName = styled.a`
   &:hover {
     color: white;
   }
-  transition: 1.3s;
 `;
 const WorkItem = (props) => {
   return (
@@ -43,10 +44,12 @@ const WorkItem = (props) => {
       <Desc>{props.desc}</Desc>
       <BtnWrapper>
         <Button name="live">
-          <BtnName href={props.live}>View Live</BtnName>
+          <BtnName href={props.live} target="_blank">
+            View Live
+          </BtnName>
         </Button>
         <Button name="source">
-          <BtnName href={props.source} name="source">
+          <BtnName href={props.source} name="source" target="_blank">
             View Source
           </BtnName>
         </Button>

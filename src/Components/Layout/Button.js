@@ -19,7 +19,6 @@ const MainButton = styled.button`
   cursor: pointer;
   &:hover {
     background-color: #4e9dad;
-    /* color: ${(props) => props.name === "source" && "white"}; */
   }
 `;
 const Button = (props) => {

@@ -1,6 +1,7 @@
 import React from "react";
 import { Fragment } from "react/cjs/react.production.min";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 import MyWork from "./MyWork/MyWork";
 import Tech from "./Tech";
 
@@ -8,6 +9,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({ width: "100%" })}
 `;
 const Wrapper = styled.div`
   width: 58%;
@@ -16,10 +18,12 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 75px 0px;
+  ${mobile({ width: "100%", margin: "10px 0px" })}
 `;
 const Main = styled.div`
   font-size: 2rem;
   font-weight: 600;
+  ${mobile({ fontSize: "1.8rem", margin: "35px 0px" })}
 `;
 const HeadingInfo = styled.span`
   color: green;
@@ -33,6 +37,7 @@ const TechDescription = styled.span`
 const MyDesc = styled.p`
   letter-spacing: 1px;
   font-weight: 500;
+  ${mobile({ fontSize: "0.8rem" })}
 `;
 
 const MainContent = () => {
@@ -44,7 +49,7 @@ const MainContent = () => {
             <Main>
               <HeadingInfo>Hi there!</HeadingInfo> <br />
               I'm Abhishek
-              <TechDescription> A Front End Developer</TechDescription>
+              <TechDescription>A Front End Developer</TechDescription>
             </Main>
             <MyDesc>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

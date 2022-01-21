@@ -18,6 +18,9 @@ const ScrollTopBtn = () => {
         setIsVisible(false);
       }
     });
+    return () => {
+      setIsVisible(); // This worked for me
+    };
   }, []);
 
   const ScrollToTop = () => {

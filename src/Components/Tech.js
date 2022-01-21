@@ -10,11 +10,12 @@ import Github from "../images/Tech/github.svg";
 import Git from "../images/Tech/git.svg";
 import Jira from "../images/Tech/jira.svg";
 import Mysql from "../images/Tech/mysql.png";
-
+import { mobile } from "../responsive";
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({ display: "none" })}
 `;
 
 const Wrapper = styled.div`

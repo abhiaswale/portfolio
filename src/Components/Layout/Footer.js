@@ -7,11 +7,13 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import ScrollTopBtn from "./ScrollTopBtn";
+import { mobile } from "../../responsive";
 
 const MainWrp = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
+  ${mobile({ display: "none" })}
 `;
 
 const Container = styled.div`
@@ -70,13 +72,16 @@ const Footer = () => {
             </span>
           </p>
           <IconWrapper>
-            <Icon href="https://github.com/abhiaswale">
+            <Icon href="https://github.com/abhiaswale" target="_blank">
               <AiFillGithub />
             </Icon>
-            <Icon href="https://twitter.com/_abhi42">
+            <Icon href="https://twitter.com/_abhi42" target="_blank">
               <AiFillTwitterCircle />
             </Icon>
-            <Icon href="https://www.linkedin.com/in/abhishek-aswale-110b931b3/">
+            <Icon
+              href="https://www.linkedin.com/in/abhishek-aswale-110b931b3/"
+              target="_blank"
+            >
               <AiFillLinkedin />
             </Icon>
           </IconWrapper>

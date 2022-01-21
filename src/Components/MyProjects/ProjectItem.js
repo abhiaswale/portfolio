@@ -36,7 +36,6 @@ const BtnName = styled.a`
   &:hover {
     color: white;
   }
-  transition: 1.3s;
 `;
 
 const ProjectItem = (props) => {
@@ -47,10 +46,12 @@ const ProjectItem = (props) => {
       <Desc>{props.detailedDescription}</Desc>
       <Temp>
         <Button name="live">
-          <BtnName href={props.live}>View Live</BtnName>
+          <BtnName href={props.live} target="_blank">
+            View Live
+          </BtnName>
         </Button>
         <Button name="source">
-          <BtnName href={props.source} name="source">
+          <BtnName href={props.source} name="source" target="_blank">
             View Source
           </BtnName>
         </Button>

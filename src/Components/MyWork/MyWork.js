@@ -4,11 +4,13 @@ import WorkItem from "./WorkItem";
 import { projectItems } from "../../data";
 import { Link } from "react-router-dom";
 import Button from "../Layout/Button";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mobile({ width: "100%", justifyContent: "flex-start" })}
 `;
 const Wrapper = styled.div`
   width: 58%;
@@ -16,12 +18,15 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
 `;
-const Title = styled.h1``;
+const Title = styled.h1`
+  ${mobile({ fontSize: "1.8rem" })}
+`;
 
 const Work = styled.div`
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  ${mobile({ gridTemplateColumns: "1fr", width: "100%" })}
   grid-gap: 40px;
 `;
 
