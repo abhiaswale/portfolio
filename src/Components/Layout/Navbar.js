@@ -5,15 +5,14 @@ import Logo from "../../images/Logo3.png";
 
 const Container = styled.div`
   width: 100%;
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 const Wrapper = styled.div`
   width: 58%;
-  padding: 10px 10px;
-  /* background-color: green; */
+  height: 8vh;
+  padding: 16px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,18 +22,18 @@ const Wrapper = styled.div`
 const Left = styled.div`
   display: flex;
   align-items: center;
-  height: 90px;
 `;
 const LogoImg = styled.img`
   object-fit: cover;
   width: 190px;
-  height: auto;
+  height: 25vh;
   cursor: pointer;
 `;
 
 const Right = styled.div`
   display: flex;
   align-items: center;
+  font-size: 0.8rem;
 `;
 
 const LinkWrapper = styled.nav`
@@ -47,13 +46,15 @@ const Links = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #03989e;
+  /* color: #03989e; */
 `;
 
 const LinkItem = styled.li`
   cursor: pointer;
   padding: 12px;
   transition: 1s;
+  font-weight: bold;
+  color: #03989e;
 `;
 
 const MyNavLink = styled(NavLink)`
@@ -79,6 +80,7 @@ const Navbar = () => {
         <Left>
           <LogoImg src={Logo} onClick={GoHome} />
         </Left>
+
         <Right>
           <LinkWrapper>
             <Links>

@@ -12,20 +12,18 @@ const MainWrp = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  margin-bottom: 50px;
 `;
 
 const Container = styled.div`
   width: 100%;
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0px 40px 0px;
 `;
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  /* background-color: green; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -44,7 +42,7 @@ const BtnWrap = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px 0px;
+  margin: 10px 0px 42px 0px; ;
 `;
 
 const Footer = () => {
@@ -52,11 +50,11 @@ const Footer = () => {
     <MainWrp>
       <BtnWrap>
         <ScrollTopBtn />
-        <div>Top</div>
+        <div style={{ fontWeight: "500" }}>Top</div>
       </BtnWrap>
       <Container>
         <Wrapper>
-          <p>
+          <p style={{ fontWeight: "500" }}>
             <span>©2022</span>, Built with
             <a href="https://reactjs.org/"> React Js</a>
           </p>

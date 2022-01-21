@@ -13,7 +13,6 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr;
 `;
@@ -27,12 +26,14 @@ const Work = styled.div`
 `;
 
 const ViewBtnWrapper = styled.div`
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 35px 0px 60px 0px;
 `;
 const MyLink = styled(Link)`
+  font-size: 1.2em;
   color: white;
   text-decoration: none;
 `;

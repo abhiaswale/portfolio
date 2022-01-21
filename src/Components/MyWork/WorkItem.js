@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 const Title = styled.span`
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 600;
 `;
 const Date = styled.span`
   margin: 0.5em 0em;
@@ -19,6 +19,7 @@ const Date = styled.span`
 `;
 const Desc = styled.p`
   margin: 0.6em 0em;
+  font-weight: 500;
 `;
 const BtnWrapper = styled.div`
   display: flex;
@@ -29,6 +30,10 @@ const BtnName = styled.a`
   color: white;
   text-decoration: none;
   color: ${(props) => props.name === "source" && "black"};
+  &:hover {
+    color: white;
+  }
+  transition: 1.3s;
 `;
 const WorkItem = (props) => {
   return (
@@ -45,9 +50,6 @@ const WorkItem = (props) => {
             View Source
           </BtnName>
         </Button>
-        {/* <Button name="live">
-          <BtnName link={props.live}>View Live</BtnName>
-        </Button> */}
       </BtnWrapper>
     </Container>
   );

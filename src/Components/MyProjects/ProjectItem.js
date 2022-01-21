@@ -21,9 +21,6 @@ const Temp = styled.div`
 const BtnName = styled.a`
   color: white;
   text-decoration: none;
-  &:hover {
-    color: ${(props) => props.name === "source" && "white"};
-  }
   color: ${(props) => props.name === "source" && "black"};
 `;
 

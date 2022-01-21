@@ -20,9 +20,9 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  /* background-color: pink; */
   display: grid;
   grid-template-columns: 1fr;
+  margin-bottom: 60px;
 `;
 
 const Title = styled.h1``;
@@ -43,6 +43,7 @@ const LogosImg = styled.img`
 `;
 const LogoName = styled.span`
   font-size: 0.8rem;
+  font-weight: 500;
   padding: 8px;
 `;
 
@@ -54,7 +55,7 @@ const Tech = () => {
         <ItemWrapper>
           <Item>
             <LogosImg src={Js} />
-            <LogoName>Javascript</LogoName>
+            <LogoName>JavaScript</LogoName>
           </Item>
           <Item>
             <LogosImg src={ReactLogo} />
@@ -66,7 +67,7 @@ const Tech = () => {
           </Item>
           <Item>
             <LogosImg src={Nodejs} />
-            <LogoName>Nodejs</LogoName>
+            <LogoName>NodeJs</LogoName>
           </Item>
           <Item>
             <LogosImg src={Html} />
@@ -90,7 +91,7 @@ const Tech = () => {
           </Item>
           <Item>
             <LogosImg src={Mysql} />
-            <LogoName>Mysql</LogoName>
+            <LogoName>MySql</LogoName>
           </Item>
         </ItemWrapper>
       </Wrapper>
