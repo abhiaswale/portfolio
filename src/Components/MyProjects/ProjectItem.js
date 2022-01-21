@@ -12,24 +12,39 @@ const Container = styled.div`
   -moz-box-shadow: 0 8px 6px -6px grey;
   box-shadow: 0 8px 2px -6px grey;
 `;
-// const Wrapper = styled.div``;
+const Title = styled.span`
+  font-size: 1.2rem;
+  font-weight: 600;
+`;
+const Date = styled.span`
+  margin: 0.5em 0em;
+  font-size: 0.8em;
+`;
 const Temp = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
 `;
+const Desc = styled.p`
+  font-weight: 500;
+  margin-top: 10px;
+`;
 const BtnName = styled.a`
   color: white;
   text-decoration: none;
   color: ${(props) => props.name === "source" && "black"};
+  &:hover {
+    color: white;
+  }
+  transition: 1.3s;
 `;
 
 const ProjectItem = (props) => {
   return (
     <Container>
-      <h1>{props.name}</h1>
-      <span>{props.date}</span>
-      <p>{props.detailedDescription}</p>
+      <Title>{props.name}</Title>
+      <Date>{props.date}</Date>
+      <Desc>{props.detailedDescription}</Desc>
       <Temp>
         <Button name="live">
           <BtnName href={props.live}>View Live</BtnName>

@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 `;
 
 const Title = styled.h1``;

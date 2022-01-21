@@ -4,7 +4,7 @@ import styled from "styled-components";
 import {
   AiFillGithub,
   AiFillTwitterCircle,
-  AiFillFacebook,
+  AiFillLinkedin,
 } from "react-icons/ai";
 import ScrollTopBtn from "./ScrollTopBtn";
 
@@ -34,7 +34,7 @@ const IconWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 `;
 
 const BtnWrap = styled.div`
@@ -42,7 +42,16 @@ const BtnWrap = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10px 0px 42px 0px; ;
+  margin: 30px 0px 42px 0px; ;
+`;
+
+const Icon = styled.a`
+  text-decoration: none;
+  transition: 1s;
+  color: #a7a9ab;
+  &:hover {
+    color: #40b1bf;
+  }
 `;
 
 const Footer = () => {
@@ -56,18 +65,20 @@ const Footer = () => {
         <Wrapper>
           <p style={{ fontWeight: "500" }}>
             <span>©2022</span>, Built with
-            <a href="https://reactjs.org/"> React Js</a>
+            <span style={{ fontWeight: "500", color: " #40b1bf" }}>
+              &nbsp; React Js
+            </span>
           </p>
           <IconWrapper>
-            <a href="https://github.com/abhiaswale">
+            <Icon href="https://github.com/abhiaswale">
               <AiFillGithub />
-            </a>
-            <a href="https://twitter.com/_abhi42">
+            </Icon>
+            <Icon href="https://twitter.com/_abhi42">
               <AiFillTwitterCircle />
-            </a>
-            <a href="https://www.facebook.com/abhishek.aswale.3/">
-              <AiFillFacebook />
-            </a>
+            </Icon>
+            <Icon href="https://www.linkedin.com/in/abhishek-aswale-110b931b3/">
+              <AiFillLinkedin />
+            </Icon>
           </IconWrapper>
         </Wrapper>
       </Container>
