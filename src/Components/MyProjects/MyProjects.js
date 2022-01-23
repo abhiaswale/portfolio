@@ -12,7 +12,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
-  ${mobile({ width: "100%" })}
+  ${mobile({ width: "100%", margin: "93px 0px" })}
 `;
 const Title = styled.h1`
   ${mobile({ fontSize: "1.8rem", textAlign: "center" })}

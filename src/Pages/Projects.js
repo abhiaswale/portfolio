@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../Components/Layout/Footer";
-import Navbar from "../Components/Layout/Navbar";
+import Navbar from "../Components/Layout/Navigation/Navbar";
 import MyProjects from "../Components/MyProjects/MyProjects";
 
 const Projects = () => {

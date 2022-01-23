@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import {
   AiFillGithub,
   AiFillTwitterCircle,
@@ -13,7 +12,6 @@ const MainWrp = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  /* ${mobile({ display: "none" })} */
 `;
 
 const Container = styled.div`
@@ -22,6 +20,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   margin: 10px 0px 40px 0px;
+  ${mobile({ width: "100%" })}
 `;
 const Wrapper = styled.div`
   width: 58%;
@@ -30,7 +29,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #03989e;
-  ${mobile({ width: "100%", flexDirection: "column" })}
+  ${mobile({ flexDirection: "column" })}
 `;
 
 const Copyright = styled.p`

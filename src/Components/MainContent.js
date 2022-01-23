@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 75px 0px;
-  ${mobile({ width: "100%", margin: "10px 0px" })}
+  ${mobile({ width: "100%", margin: "93px 0px" })}
 `;
 const Main = styled.div`
   font-size: 2rem;
