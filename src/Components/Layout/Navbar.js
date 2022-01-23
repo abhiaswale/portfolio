@@ -9,7 +9,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${mobile({ width: "100%" })}
+  /* ${mobile({ width: "100%" })} */
 `;
 const Wrapper = styled.div`
   ${mobile({ backgroundColor: "red", width: "100%", height: "2vh" })}

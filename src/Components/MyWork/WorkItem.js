@@ -9,11 +9,11 @@ const Container = styled.div`
   border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr;
-  ${mobile({ width: "40vh" })}
 `;
 const Title = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 600;
+  ${mobile({ fontSize: "1em" })}
 `;
 const Date = styled.span`
   margin: 0.5em 0em;

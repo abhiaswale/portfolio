@@ -10,23 +10,28 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${mobile({ width: "100%", justifyContent: "flex-start" })}
+  ${mobile({ width: "100%" })}
 `;
 const Wrapper = styled.div`
   width: 58%;
   padding: 10px 10px;
   display: grid;
   grid-template-columns: 1fr;
+  ${mobile({ width: "100%" })}
 `;
 const Title = styled.h1`
-  ${mobile({ fontSize: "1.8rem" })}
+  ${mobile({ fontSize: "1.8rem", textAlign: "center" })}
 `;
 
 const Work = styled.div`
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  ${mobile({ gridTemplateColumns: "1fr", width: "100%" })}
+  ${mobile({
+    gridTemplateColumns: "1fr",
+    width: "100%",
+    alignContent: "center",
+  })}
   grid-gap: 40px;
 `;
 

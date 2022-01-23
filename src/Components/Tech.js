@@ -15,7 +15,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${mobile({ display: "none" })}
 `;
 
 const Wrapper = styled.div`
@@ -24,14 +23,19 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 10px;
+  ${mobile({ width: "100%" })}
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-weight: 600;
+  ${mobile({ fontSize: "1.8rem", textAlign: "center" })}
+`;
 const ItemWrapper = styled.div`
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 32px 0px;
+  ${mobile({ gridTemplateColumns: "1fr 1fr 1fr" })}
 `;
 const Item = styled.div`
   display: grid;

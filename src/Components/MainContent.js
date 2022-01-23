@@ -9,7 +9,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  ${mobile({ width: "100%" })}
 `;
 const Wrapper = styled.div`
   width: 58%;
@@ -23,15 +22,22 @@ const Wrapper = styled.div`
 const Main = styled.div`
   font-size: 2rem;
   font-weight: 600;
-  ${mobile({ fontSize: "1.8rem", margin: "35px 0px" })}
+  ${mobile({ fontSize: "1.8rem", margin: "35px 10px" })}
 `;
 const HeadingInfo = styled.span`
   color: green;
   margin-bottom: 20px;
+  ${mobile({
+    textAlign: "center",
+    paddingRight: "0.75rem",
+    paddingBottom: "1rem",
+  })}
 `;
+const NameWrapper = styled.span``;
 const TechDescription = styled.span`
   margin: 10px;
   color: #03989e;
+  ${mobile({ display: "block", margin: "0px" })}
 `;
 
 const MyDesc = styled.p`
@@ -47,8 +53,8 @@ const MainContent = () => {
         <Wrapper>
           <div>
             <Main>
-              <HeadingInfo>Hi there!</HeadingInfo> <br />
-              I'm Abhishek
+              <HeadingInfo>Hi there!</HeadingInfo>
+              <NameWrapper>I'm Abhishek</NameWrapper>
               <TechDescription>A Front End Developer</TechDescription>
             </Main>
             <MyDesc>

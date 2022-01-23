@@ -13,7 +13,7 @@ const MainWrp = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   align-content: center;
-  ${mobile({ display: "none" })}
+  /* ${mobile({ display: "none" })} */
 `;
 
 const Container = styled.div`
@@ -30,6 +30,11 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #03989e;
+  ${mobile({ width: "100%", flexDirection: "column" })}
+`;
+
+const Copyright = styled.p`
+  font-weight: 500;
 `;
 
 const IconWrapper = styled.div`
@@ -65,12 +70,12 @@ const Footer = () => {
       </BtnWrap>
       <Container>
         <Wrapper>
-          <p style={{ fontWeight: "500" }}>
+          <Copyright>
             <span>©2022</span>, Built with
             <span style={{ fontWeight: "500", color: " #40b1bf" }}>
               &nbsp; React Js
             </span>
-          </p>
+          </Copyright>
           <IconWrapper>
             <Icon href="https://github.com/abhiaswale" target="_blank">
               <AiFillGithub />
