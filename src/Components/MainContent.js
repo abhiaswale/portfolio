@@ -61,10 +61,10 @@ const MainContent = () => {
               <TechDescription>A Front End Developer</TechDescription>
             </Main>
             <MyDesc>
-              I'm a Software Engineer in Nashik, Maharashtra. I mostly focus on
-              front-end of the web. I like to craft solid and scalable frontend
-              products with great user expriences. This is my site where I share
-              whatever side projects I've been working on.
+              I'm a Software Engineer from Nashik, Maharashtra. I mostly focus
+              on front-end of the web. I like to craft solid and scalable
+              frontend products with great user expriences. This is my site
+              where I share whatever side projects I've been working on.
             </MyDesc>
           </div>
         </Wrapper>
