@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const Main = styled.div`
   font-size: 2rem;
   font-weight: 600;
-  ${mobile({ fontSize: "1.7rem", margin: "35px 10px" })}
+  ${mobile({ fontSize: "1.7rem", margin: "35px 18px", textAlign: "center" })}
 `;
 const HeadingInfo = styled.span`
   display: block;
