@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 
 const Title = styled.h1`
   font-weight: 600;
-  ${mobile({ fontSize: "1.8rem", textAlign: "center" })}
+  ${mobile({ fontSize: "1.5rem", textAlign: "center" })}
 `;
 const ItemWrapper = styled.div`
   margin-top: 20px;

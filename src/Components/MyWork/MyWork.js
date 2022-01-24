@@ -20,7 +20,7 @@ const Wrapper = styled.div`
   ${mobile({ width: "100%" })}
 `;
 const Title = styled.h1`
-  ${mobile({ fontSize: "1.8rem", textAlign: "center" })}
+  ${mobile({ fontSize: "1.5rem", textAlign: "center" })}
 `;
 
 const Work = styled.div`
