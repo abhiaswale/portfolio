@@ -29,7 +29,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #03989e;
-  ${mobile({ flexDirection: "column" })}
+  ${mobile({ width: "100%", flexDirection: "column" })}
 `;
 
 const Copyright = styled.p`

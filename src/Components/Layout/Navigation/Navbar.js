@@ -71,6 +71,7 @@ const Navbar = () => {
     navigate("/");
   };
   const [sideBar, setisSideBar] = useState(false);
+
   const toggleHandler = () => {
     setisSideBar(!sideBar);
   };
@@ -90,12 +91,9 @@ const Navbar = () => {
 
   useEffect(() => {
     let handler = (e) => {
-      // if (!menuRef.current.contains(e.target)) {
-      //   setisSideBar(false);
-      //   console.log("hi");
-      // }
-      console.log(e.target);
-      console.log(menuRef.current);
+      if (!menuRef.current.contains(e.target)) {
+        setisSideBar(false);
+      }
     };
     document.addEventListener("mousedown", handler);
 

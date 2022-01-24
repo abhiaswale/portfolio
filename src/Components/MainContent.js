@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 75px 0px;
-  ${mobile({ width: "100%", margin: "93px 0px" })}
+  ${mobile({ width: "100%", marginTop: "93px" })}
 `;
 const Main = styled.div`
   font-size: 2rem;
@@ -43,7 +43,7 @@ const TechDescription = styled.span`
 const MyDesc = styled.p`
   letter-spacing: 1px;
   font-weight: 500;
-  ${mobile({ fontSize: "0.8rem" })}
+  ${mobile({ fontSize: "0.8rem", letterSpacing: "2px" })}
 `;
 
 const MainContent = () => {

@@ -23,6 +23,7 @@ const Links = styled.ul`
   ${mobile({
     flexDirection: "column",
     fontSize: "1rem",
+    padding: "0",
   })}
 `;
 
