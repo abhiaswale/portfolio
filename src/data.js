@@ -29,4 +29,24 @@ export const projectItems = [
     live: "https://guess-my-number-dd43c8.netlify.app/",
     source: "https://github.com/abhiaswale/guess-my-number",
   },
+  {
+    id: 4,
+    name: "CRYPTO APP",
+    date: "25th Jan 2022",
+    description: "An App to check prices of cryptocurrencies",
+    detailedDescription:
+      "An App to check prices of various crypto currencies. Made using React and Tailwind Css and used axios to fetch data from Api. User can search for diffrent cryptos view their details like current price %up, %down, etc",
+    live: "https://cryptocurrencyapp1.netlify.app/",
+    source: "https://github.com/abhiaswale/crypto-app",
+  },
+  {
+    id: 5,
+    name: "WEATHER APP",
+    date: "02nd Feb 2022",
+    description: "An App to check Weather conditions",
+    detailedDescription:
+      "An App to check weather conditions of diffrent cities around the world. Made using React and Tailwind Css and used axios to fetch data from Open Weather Map Api. Weather conditions like Current temperature, Humidity, Min Temp, Max Temp, Wind Speed, etc can be viewed ",
+    live: "https://weather-app-dd52.netlify.app/",
+    source: "https://github.com/abhiaswale/weather-app",
+  },
 ];

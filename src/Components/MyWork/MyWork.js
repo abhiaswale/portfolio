@@ -49,7 +49,8 @@ const MyLink = styled(Link)`
 `;
 
 const MyWork = () => {
-  const workList = projectItems.map((work) => (
+  const filterWorkList = projectItems.filter((wor) => wor.id <= 3);
+  const workList = filterWorkList.map((work) => (
     <WorkItem
       id={work.id}
       key={work.id}
