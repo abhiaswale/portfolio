@@ -8,7 +8,7 @@ import Html from "../images/Tech/html.svg";
 import Css from "../images/Tech/css.svg";
 import Github from "../images/Tech/github.svg";
 import Git from "../images/Tech/git.svg";
-import Jira from "../images/Tech/jira.svg";
+import Tailwind from "../images/Tech/tailwind.svg";
 import Mysql from "../images/Tech/mysql.png";
 import { mobile } from "../responsive";
 const Container = styled.div`
@@ -91,8 +91,8 @@ const Tech = () => {
             <LogoName>Git</LogoName>
           </Item>
           <Item>
-            <LogosImg src={Jira} />
-            <LogoName>Jira</LogoName>
+            <LogosImg src={Tailwind} />
+            <LogoName>Tailwind</LogoName>
           </Item>
           <Item>
             <LogosImg src={Mysql} />
