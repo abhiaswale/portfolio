@@ -1,6 +1,16 @@
 export const projectItems = [
   {
     id: 1,
+    name: "ECOM STORE",
+    date: "21st Jun 2022",
+    description: "Ecommerce Application for Electronic Products",
+    detailedDescription:
+      "Created this app in MERN stack, used Tailwind for CSS, Context for state management. Core features include Cart and Wishlist Management, Razorpay API for payment, address management, search/filter/sort functionality, JWT based Authentication",
+    live: "https://ecom-online-store.netlify.app/",
+    source: "https://github.com/abhiaswale/ecom-frontend",
+  },
+  {
+    id: 2,
     name: "BLOGGER",
     date: "25th Mar 2022",
     description: "A Blog Application to post blogs",
@@ -10,7 +20,7 @@ export const projectItems = [
     source: "https://github.com/abhiaswale/blogApp-frontend",
   },
   {
-    id: 2,
+    id: 3,
     name: "CRYPTO APP",
     date: "25th Jan 2022",
     description: "An App to check prices of cryptocurrencies",
@@ -20,7 +30,7 @@ export const projectItems = [
     source: "https://github.com/abhiaswale/crypto-app",
   },
   {
-    id: 3,
+    id: 4,
     name: "GUESS MY NUMBER",
     date: "30th Nov 2021",
     description: "A Fun Guess my number game",
@@ -30,7 +40,7 @@ export const projectItems = [
     source: "https://github.com/abhiaswale/guess-my-number",
   },
   {
-    id: 4,
+    id: 5,
     name: "TO DO APP",
     date: "8th Oct 2021",
     description: "An basic To Do tasks App to add tasks ",
@@ -40,7 +50,7 @@ export const projectItems = [
     source: "https://github.com/abhiaswale/todolist",
   },
   {
-    id: 5,
+    id: 6,
     name: "WEATHER APP",
     date: "02nd Feb 2022",
     description: "An App to check Weather conditions",
@@ -50,7 +60,7 @@ export const projectItems = [
     source: "https://github.com/abhiaswale/weather-app",
   },
   {
-    id: 6,
+    id: 7,
     name: "FOODY APP",
     date: "1st Nov 2021",
     description: "An App made for an Restaurant",
